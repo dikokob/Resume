@@ -1,0 +1,270 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Boitumelo}{Dikoko}{ \urlstyle{same}\url{http://debarghyadas.com} \\
+\href{mailto:dikokob@gmail.com}{dikokob@gmail.com} | +27 73 753 3856
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Cape Town}
+\descript{MEng in Computer Science}
+\location{Expected April 2020 | Cape Town, South Africa}
+My project is a simultaneous localization and mapping (SLAM). My main focus being, collaborative exploration in an unknown environment. I implemented a solution using Robotic Operating System(ROS) and OpenCV( for image registration), to merge maps from multiple robots \\
+\sectionsep
+
+
+\descript{BSc(Eng) Mechatronics with honours}
+\location{Feb 2013 - Dec 2016 | Cape Town, South Africa}
+Mechatronics is an interdisciplinary branch of engineering which combines a fundamental background in mechanical engineering with light-current electrical engineering. \\
+Dean's List (2013 and 2014) \\
+\sectionsep
+
+\subsection{St Dominic's College}
+\location{Grad. Dec 2012|  Welkom, South Africa}
+I completed my high school having written IEB examinations in order to receive my National Senior Certificate. At the school I was a Prefect and participated in numerous sports including cricket, I was also involved in cultural activities and outreach activities including Rotary’s Interact and played the marimba \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn://  \href{https://www.linkedin.com/in/dikokob}{\custombold{dikokob}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{References}
+
+Tim Harkness (Head of Sports Science and Psychology at Chelsea Football Club)\\
+Cell: +44 7894 479340 \\
+Email: tim.harkness@chelseafc.com \\
+\sectionsep
+
+Kelly Chibale ( Warren at Smuts Hall Residence(University of Cape Town))\\
+Email: kelly.chibale@uct.ac.za \\
+\sectionsep
+
+Robyn Verrinder(Lecturer at University of Cape Town and MSc Supervisor) \\
+Email: robyn.verrinder@uct.ac.za \\
+\sectionsep
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+Python \textbullet{} Matlab \textbullet{} \LaTeX\ \textbullet{} ROS \textbullet{} C \textbullet{} C++ \textbullet{} SQL \\
+\location{Over 1000 lines:}
+C\\
+\location{Familiar:}
+Xamarin 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Chelsea Football Club}
+\descript{|Software Engineer }
+\location{ Nov 2017 – Present | Remote}
+In my day to day work, I maintain and improve the current systems. I use the following tools: Python, C#, Azure Cloud Services(Data Factory, Kuberneters, Docker, Serverless Functions, SQL, Virtual Machines, Redis), VSTS, GIT, Matlab
+\sectionsep
+
+\runsubsection{Avior Capital Markets}
+\\
+\descript{|Contract Software Developer }
+\location{Jun 2017 – Sept  2017 | Cape Town, South Africa}
+I was tasked with writing an Excel Addin in .NET for a client. The client needed quantitative functions such as covariance, principal component analysis, efficient frontier etc, to be used in excel.
+\sectionsep
+\\
+\descript{|Software Development Intern }
+\location{Dec 2015 – Jan  2015 | Cape Town, South Africa}
+I was tasked with firstly creating an XML file viewer in C#, this file was a log file which was a log file produced from their data pump. Secondly, I was tasked with designing a data pump to collect data from an excel file stored on the (Johannesburg Stock Exchange)JSE’s FTP site and storing the data in a SQL database.
+\sectionsep
+
+
+\runsubsection{Lumkani}
+\descript{|Engineer}
+\location{Jan 2017 – April 2017 | Cape Town, South Africa}
+I was responsible for implementing a new low power rf module for their current mesh network. Designing and implementing software of embedded devices and systems. Designing, developing, coding, testing and debugging system software. Analyzing and enhancing efficiency, stability and scalability of system resources.
+\sectionsep
+
+\runsubsection{The University of Cape Town}
+\\
+\descript{|Teaching Assistant }
+\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
+Teaching Assistants are senior postgraduates who provide assistance to academic staff members who have a very heavy workload as a result of increasing student numbers.
+\sectionsep
+\\
+\descript{| Vacation assistant }
+\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
+Assisted with routine tasks associated with the day-to-day running of the residence, Where vacation residence plan may be substantially revised be prepared to accept residence related administrative or similar type duties.
+\sectionsep
+\\
+\descript{|Student Front Desk Coordinator }
+\location{Feb 2015 – Nov 2015 | Cape Town, South Africa}
+I was responsible for record keeping and liaison with Student Housing & Residence Life central office, and Co-ordination and training of student reception staff at a residential level.
+\sectionsep
+\\
+\descript{|Student Front Desk Assistant}
+\location{Feb 2014 – Nov 2014 | Cape Town, South Africa}
+Involves carrying out tasks associated with effective monitoring of reception areas and assisting with host routine task associated with effective administration and front house services.
+\sectionsep
+
+\runsubsection{Denel Dynamics}
+\descript{| Engineer Intern}
+\location{Jan 2015 – Feb 2015 | Pretoria, South Africa}
+I was responsible for getting the absolute position from a nezter DS-25-16 rotary encoder ,using a dsPIC33FJXXXMCX06A/X08A/X10A 16-bit microcontroller.
+\sectionsep
+
+\runsubsection{Onsite IT Supports}
+\descript{|Technician}
+\location{Jan 2012 – Jan 2013 |South Africa}
+I was responsible for installing CCTV, network ports and maintaining the computers on the network.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Teaching Experience}
+\runsubsection{The University of Cape Town}
+\\
+\descript{|Teaching Assistant }
+\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
+Teaching Assistants are senior postgraduates who provide assistance to academic staff members who have a very heavy workload as a result of increasing student numbers.
+\sectionsep
+
+\runsubsection{Cornell Phonetics Lab}
+\descript{| Head Undergraduate Researcher}
+\location{Mar 2012 – May 2013 | Ithaca, NY}
+Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2014	     & top 52/2500  & KPCB Engineering Fellow\\
+2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+2013	     & National  & Jump Trading Challenge Finalist\\
+2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+2010     & National & Comp. Soc. of India's National Programming Contest\\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Societies} 
+
+\begin{tabular}{rll}
+2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+2012   &  National  & Golden Key International Honor Society\\
+2012   &  National   & National Society of Collegiate Scholars\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}
