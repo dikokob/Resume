@@ -17,6 +17,9 @@
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
+\usepackage{fontawesome}
+\usepackage[misc]{ifsym}
+\usepackage{mathptmx}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 

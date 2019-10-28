@@ -1,13 +1,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Deedy - One Page Two Column Resume
 % LaTeX Template
-% Version 1.1 (30/4/2014)
+% Version 1.1.1 (October 2019)
 %
 % Original author:
 % Debarghya Das (http://debarghyadas.com)
 %
 % Original repository:
 % https://github.com/deedydas/Deedy-Resume
+%
+% Updated author:
+% Boitumelo Dikoko (dikokob@gmail.com)
 %
 % IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
 %
@@ -20,12 +23,15 @@
 % 
 % TODO:
 % 1. Integrate biber/bibtex for article citation under publications.
-% 2. Figure out a smoother way for the document to flow onto the next page.
-% 3. Add styling information for a "Projects/Hacks" section.
-% 4. Add location/address information
-% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 2. Add styling information for a "Projects/Hacks" section.
+% 3. Add location/address information
+% 4. Merge OpenFont and MacFonts as a single sty with options.
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1.1:
+% 1. Figure out a smoother way for the document to flow onto the next page.
 %
 % CHANGELOG:
 % v1.1:
@@ -46,7 +52,6 @@
 
 \documentclass[]{deedy-resume-openfont}
 
-
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -63,8 +68,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\namesection{Boitumelo}{Dikoko}{ \urlstyle{same}\url{http://debarghyadas.com} \\
-\href{mailto:dikokob@gmail.com}{dikokob@gmail.com} | +27 73 753 3856
+\namesection{Boitumelo}{Dikoko}{
+\href{mailto:dikokob@gmail.com}{\Letter\ dikokob@gmail.com} \ \ \
+\href{}{\faMobile\ +27 73 753 3856} \ \ \
+\href{https://www.linkedin.com/in/dikokob}{\faLinkedinSquare\ \custombold{dikokob}} 
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -100,15 +107,123 @@ I completed my high school having written IEB examinations in order to receive m
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     LINKS
+%     Awards
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-LinkedIn://  \href{https://www.linkedin.com/in/dikokob}{\custombold{dikokob}} \\
+\section{Awards}
+
+\location{1st  Place Geneva Challenge(2017):}
+The challenge is organised by  The Graduate Institute of Geneva. The contest is for graduate students internationally aimed at advancing development. The 2017 edition of the contest was on the challenges of employment. 
 \sectionsep
 
+\location{Golden Key International Honour Society(2014) :}
+Golden Key is the world's largest collegiate honour society. Membership into the Society is by invitation only and applies to the top 15\% of college and university
+\sectionsep
+
+\location{Jan Smuts Award(2014):}
+Award is given to the students in Smuts Hall Residence that are Top achievers in their academics.
+\sectionsep
+
+\end{minipage} 
+\hfill
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     COURSEWORK
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Chelsea Football Club}
+\descript{|Software Engineer }
+\location{ Nov 2017 – Present | Remote}
+I work with the sport science department, helping them ingest and process data from GPS units and motion capture systems used by the players in both matches and training. In my day to day work, I maintain and improve the current systems. I use the following tools: Python, C\#, Azure Cloud Services(Data Factory, Kuberneters, Docker, Serverless Functions, SQL, Virtual Machines, Redis), VSTS, GIT, Matlab.
+\sectionsep
+
+\runsubsection{Avior Capital Markets}
+\\
+\descript{|Contract Software Developer }
+\location{Jun 2017 – Sept  2017 | Cape Town, South Africa}
+I was tasked with writing an Excel Addin in .NET for a client. The client needed quantitative functions such as co-variance, principal component analysis, efficient frontier etc, to be used in excel.
+\sectionsep
+\\
+\descript{|Software Development Intern }
+\location{Dec 2015 – Jan  2015 | Cape Town, South Africa}
+I was tasked with firstly creating a XML file viewer in C\#,this was from a log file produced from their data pump. Secondly, I was tasked with designing a data pump to collect data from an excel file stored on the (Johannesburg Stock Exchange)JSE’s FTP site and storing the data in a SQL database.
+\sectionsep
+
+\runsubsection{Lumkani}
+\descript{| Engineer}
+\location{Jan 2017 – April 2017 | Cape Town, South Africa}
+I was responsible for implementing a new low power rf module for their current mesh network. Designing and implementing software of embedded devices and systems. Designing, developing, coding, testing and debugging system software. Analysing and enhancing efficiency, stability and scalability of system resources.
+\sectionsep
+
+\runsubsection{The University of Cape Town}
+\\
+\descript{| Vacation assistant }
+\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
+Assisted with routine tasks associated with the day-to-day running of the residence, Where vacation residence plan may be substantially revised be prepared to accept residence related administrative or similar type duties.
+\sectionsep
+\\
+\descript{| Student Front Desk Coordinator }
+\location{Feb 2015 – Nov 2015 | Cape Town, South Africa}
+I was responsible for record keeping and liaison with Student Housing $\&$ Residence Life central office, and Co-ordination and training of student reception staff at a residential level.
+\sectionsep
+\\
+\descript{| Student Front Desk Assistant}
+\location{Feb 2014 – Nov 2014 | Cape Town, South Africa}
+Involves carrying out tasks associated with effective monitoring of reception areas and assisting with host routine task associated with effective administration and front house services.
+\sectionsep
+
+\runsubsection{Denel Dynamics}
+\descript{| Engineering Intern}
+\location{Jan 2015 – Feb 2015 | Pretoria, South Africa}
+I was responsible for getting the absolute position from a nezter DS-25-16 rotary encoder ,using a dsPIC33FJXXXMCX06A/X08A/X10A 16-bit micro-controller.
+\sectionsep
+
+\runsubsection{Onsite IT Supports}
+\descript{| Technician}
+\location{Jan 2012 – Jan 2013 |South Africa}
+I was responsible for installing CCTV, network ports and maintaining the computers on the network.
+
+\end{minipage} 
+
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Programming Skills}
+\location{Proficient:}
+Python \textbullet{} Matlab \textbullet{} \LaTeX\ \\
+\textbullet{} ROS(Robotic Operating System)  \\
+\textbullet{} C \textbullet{} C++ \textbullet{} SQL \\
+\location{Intermediate:}
+C$\#$\\
+\location{Familiar:}
+Xamarin 
+\sectionsep
+
+\section{Areas of Interest}
+Big Data, IoT, Artificial Intelligence, Sports, Agriculture
+ 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{References}
@@ -126,145 +241,74 @@ Robyn Verrinder(Lecturer at University of Cape Town and MSc Supervisor) \\
 Email: robyn.verrinder@uct.ac.za \\
 \sectionsep
 
-\sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SKILLS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Skills}
-\subsection{Programming}
-\location{Over 5000 lines:}
-Python \textbullet{} Matlab \textbullet{} \LaTeX\ \textbullet{} ROS \textbullet{} C \textbullet{} C++ \textbullet{} SQL \\
-\location{Over 1000 lines:}
-C\\
-\location{Familiar:}
-Xamarin 
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN TWO
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{minipage} 
 \hfill
 \begin{minipage}[t]{0.66\textwidth} 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Experience}
-
-\runsubsection{Chelsea Football Club}
-\descript{|Software Engineer }
-\location{ Nov 2017 – Present | Remote}
-In my day to day work, I maintain and improve the current systems. I use the following tools: Python, C#, Azure Cloud Services(Data Factory, Kuberneters, Docker, Serverless Functions, SQL, Virtual Machines, Redis), VSTS, GIT, Matlab
-\sectionsep
-
-\runsubsection{Avior Capital Markets}
-\\
-\descript{|Contract Software Developer }
-\location{Jun 2017 – Sept  2017 | Cape Town, South Africa}
-I was tasked with writing an Excel Addin in .NET for a client. The client needed quantitative functions such as covariance, principal component analysis, efficient frontier etc, to be used in excel.
-\sectionsep
-\\
-\descript{|Software Development Intern }
-\location{Dec 2015 – Jan  2015 | Cape Town, South Africa}
-I was tasked with firstly creating an XML file viewer in C#, this file was a log file which was a log file produced from their data pump. Secondly, I was tasked with designing a data pump to collect data from an excel file stored on the (Johannesburg Stock Exchange)JSE’s FTP site and storing the data in a SQL database.
-\sectionsep
-
-
-\runsubsection{Lumkani}
-\descript{|Engineer}
-\location{Jan 2017 – April 2017 | Cape Town, South Africa}
-I was responsible for implementing a new low power rf module for their current mesh network. Designing and implementing software of embedded devices and systems. Designing, developing, coding, testing and debugging system software. Analyzing and enhancing efficiency, stability and scalability of system resources.
-\sectionsep
-
-\runsubsection{The University of Cape Town}
-\\
-\descript{|Teaching Assistant }
-\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
-Teaching Assistants are senior postgraduates who provide assistance to academic staff members who have a very heavy workload as a result of increasing student numbers.
-\sectionsep
-\\
-\descript{| Vacation assistant }
-\location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
-Assisted with routine tasks associated with the day-to-day running of the residence, Where vacation residence plan may be substantially revised be prepared to accept residence related administrative or similar type duties.
-\sectionsep
-\\
-\descript{|Student Front Desk Coordinator }
-\location{Feb 2015 – Nov 2015 | Cape Town, South Africa}
-I was responsible for record keeping and liaison with Student Housing & Residence Life central office, and Co-ordination and training of student reception staff at a residential level.
-\sectionsep
-\\
-\descript{|Student Front Desk Assistant}
-\location{Feb 2014 – Nov 2014 | Cape Town, South Africa}
-Involves carrying out tasks associated with effective monitoring of reception areas and assisting with host routine task associated with effective administration and front house services.
-\sectionsep
-
-\runsubsection{Denel Dynamics}
-\descript{| Engineer Intern}
-\location{Jan 2015 – Feb 2015 | Pretoria, South Africa}
-I was responsible for getting the absolute position from a nezter DS-25-16 rotary encoder ,using a dsPIC33FJXXXMCX06A/X08A/X10A 16-bit microcontroller.
-\sectionsep
-
-\runsubsection{Onsite IT Supports}
-\descript{|Technician}
-\location{Jan 2012 – Jan 2013 |South Africa}
-I was responsible for installing CCTV, network ports and maintaining the computers on the network.
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     RESEARCH
+%     Teaching Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Teaching Experience}
+
+\runsubsection{Skill Up Tutors}
+\descript{| Tutor }
+\location{Jan 2017 – Present | Cape Town, South Africa}
+SkillUp only accepts approximately 3\% of all tutors that apply. I assist students in high school and university. I have also assisted self learning adults with programming and engineering skills.
+\sectionsep
+
 \runsubsection{The University of Cape Town}
 \\
-\descript{|Teaching Assistant }
+\descript{| Teaching Assistant }
 \location{Sept 2017 – Nov 2017 | Cape Town, South Africa}
 Teaching Assistants are senior postgraduates who provide assistance to academic staff members who have a very heavy workload as a result of increasing student numbers.
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
+\descript{| Academic Tutor}
+\location{Feb 2016 – June 2017 | Cape Town, South Africa}
+2016 - Digital Electronics(EEE3017W)
+2017 - Embedded Systems I (EEE2046F)
+My responsibilities are to facilitate practical sessions and marks practicals, also I am required to invigilate exams and test sessions.
+\sectionsep
+
+\runsubsection{BrightSparkz}
+\descript{| Tutor }
+\location{Feb 2016 – Feb 2017 | Cape Town, South Africa}
+BrightSparkz Tutors provide excellent tutoring and extra lessons to learners in Grades 1 - 12 and university students. 
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
+%    Volunteer Work
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-2010     & National & Comp. Soc. of India's National Programming Contest\\
-\end{tabular}
+\section{Volunteer Work}
+
+\runsubsection{Volunteer Wildfire Services}
+\descript{| Firefighter}
+\location{Oct 2019 – Present | Cape Town, South Africa}
+The VWS works closely with other emergency service organisations in wildland fire management such as Table Mountain National Park, CapeNature, City of Cape Town Fire and Rescue Service, Disaster Management, Winelands Fire Brigade, Stellenbosch Fire Brigade, Overberg District Municipality and Working on Fire.
 \sectionsep
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SOCIETIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\runsubsection{Golden Key International Honour Society}
+\descript{| Campus and Community Outreach Officer }
+\location{Nov 2015 – Nov 2016 | Cape Town, South Africa}
+Organise events focused upon personal development, including socials, networking opportunities, as well as alumni and Honorary Member involvement. 
+\sectionsep
 
-\section{Societies} 
+\runsubsection{Smuts Hall,The University of Cape Town}
+\descript{| Senior Mentor}
+\location{Feb 2016 – Nov 2016 | Cape Town, South Africa}
+Provided support and guidance to Junior Mentors - Assisted Junior Mentors to solve problems associated with their students. Summarised Junior Mentor’s weekly reports and submitted summaries to Program Co-ordinators. Met with Junior Mentors bi-weekly and submitted feedback on these meetings.
+\sectionsep
 
-\begin{tabular}{rll}
-2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
-2014   & National   & The Global Leadership and Education Forum (tGELF)\\
-2012   &  National  & Golden Key International Honor Society\\
-2012   &  National   & National Society of Collegiate Scholars\\
-\end{tabular}
+\runsubsection{Ubunye Teachout}
+\descript{| Tutor}
+\location{Feb 2014 – Nov 2014 | Cape Town, South Africa}
+Teaching maths and science to high school learners, on a volunteer basis. I enjoyed teaching the learners to help them improve their skills.
 \sectionsep
 
 \end{minipage} 
+
+
 \end{document}
